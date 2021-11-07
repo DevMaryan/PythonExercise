@@ -1,7 +1,4 @@
 import json
-
-employees = []
-
 import sqlite3
 
 employees = []

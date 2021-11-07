@@ -23,7 +23,7 @@ def Welcome():
     print("Welcome to " + info.name + " " + info.age)
 
 def JsonToFile(jsonEmps):
-    with open('employees.txt','w') as outfile:
+    with open('employees.txt','a') as outfile:  # a - append, w - overwrite existing content
         json.dump(jsonEmps, outfile)
 
 def Result():

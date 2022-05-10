@@ -53,4 +53,13 @@ while i:
         i = False
 
     
-
+def AllEmployees():
+        try:
+        query = ("SELECT * FROM Employee")
+        c.execute(query)
+        rows = c.fetchall()
+        
+        for row in rows:
+            print(row)
+    except sqlite3.Error as e:
+        print(e)

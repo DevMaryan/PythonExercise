@@ -54,7 +54,7 @@ while i:
 
     
 def AllEmployees():
-        try:
+    try:
         query = ("SELECT * FROM Employee")
         c.execute(query)
         rows = c.fetchall()

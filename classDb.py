@@ -59,7 +59,16 @@ def AllEmployees():
         c.execute(query)
         rows = c.fetchall()
         
+        // 1 way
         for row in rows:
             print(row)
+            
+        // 2nd way
+       for row in rows:
+        print("Name: ", row[0])
+        print("Age: ", row[1])
+        
+        c.close()
+       
     except sqlite3.Error as e:
         print(e)
